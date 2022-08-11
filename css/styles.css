@@ -445,7 +445,7 @@ address li:last-child {
 }
 
 .f-social {
-  margin-left: 70px;
+  margin-left: 95px;
   padding-top: 12px;
 }
 
@@ -468,7 +468,7 @@ footer h2 {
 }
 
 .subscribe {
-  margin-left: 93px;
+  margin-left: auto;
   padding-top: 12px;
 }
 .footer-form {
