@@ -12,6 +12,20 @@
 
   --cub-bez: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -210,10 +224,6 @@ footer .logo-studio {
   color: var(--title-white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms var(--cub-bez);
-}
-
-.hidden-descr {
-  display: none;
 }
 
 .section.descr {
@@ -783,18 +793,6 @@ footer h2 {
   border-radius: 2px;
 }
 
-.checkbox {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
 .policy .checkbox:checked + .icon {
   background-image: url(../images/check.svg);
   background-color: var(--accent-color);
