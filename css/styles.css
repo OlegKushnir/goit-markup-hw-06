@@ -483,6 +483,7 @@ footer h2 {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+  color: var(--title-white-color);
   background-color: var(--dark-bgr);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -670,9 +671,11 @@ footer h2 {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: #fff;
+  cursor: pointer;
 }
 .close-btn .icon {
-  transition: transform 250ms var(--cub-bez);
+  transition: transform 250ms var(--cub-bez),
+              fill 250ms var(--cub-bez);
 }
 
 .close-btn:hover .icon {
@@ -702,7 +705,7 @@ footer h2 {
   width: 100%;
   margin-bottom: 10px;
 }
-.form-field .form-label {
+ .modal-form .form-label {
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
@@ -712,8 +715,8 @@ footer h2 {
 
 .form-field .icon {
   position: absolute;
-  bottom: 11px;
-  left: 12px;
+  top: 50%;
+  transform: translate(50%,-50%);
 }
 .form-field input:focus + .icon {
   fill: var(--accent-color);
@@ -747,8 +750,9 @@ footer h2 {
   color: var(--placeholder-text-color);
 }
 .policy {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  padding-left: 14px;
   margin-bottom: 30px;
   font-weight: 400;
   font-size: 14px;
